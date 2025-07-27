@@ -1,4 +1,5 @@
 # A simple Flask application that exports Prometheus metrics.
+**(There is also a self-hosted runner k8s manifests for this project, based on the myoung34/github-runner image)**
 
 ## What the app does
 
