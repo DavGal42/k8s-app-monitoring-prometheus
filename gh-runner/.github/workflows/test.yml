@@ -1,0 +1,13 @@
+name: My Test Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: [self-hosted, k8s]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print text
+        run: echo "Test Test Test"

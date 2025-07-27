@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-runner
+  namespace: gh-runner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-runner
+  template:
+    metadata:
+      labels:
+        app: github-runner
+    spec:
+      containers:
+        - name: runner
+          image: myoung34/github-runner:latest
+          env:
+            - name: REPO_URL
+              value: "https://github.com/DavGal42/k8s-app-monitoring-prometheus"
+            - name: RUNNER_NAME
+              value: "k8s-runner"
+            - name: RUNNER_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: runner-secrets
+                  key: token
+            - name: RUNNER_WORKDIR
+              value: "_work"
+            - name: RUNNER_GROUP
+              value: "Default"
+            - name: RUNNER_LABELS
+              value: "k8s,self-hosted"
+
