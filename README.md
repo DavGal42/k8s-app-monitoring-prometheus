@@ -13,6 +13,10 @@
 .
 ├── app.py
 ├── Dockerfile
+├── gh-runner
+│   ├── namespace.yml
+│   ├── runner-deploy.yml
+│   └── runner-secret.yml
 ├── manifests
 │   ├── deploy.yml
 │   ├── service-monitor.yml
