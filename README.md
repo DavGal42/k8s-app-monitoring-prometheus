@@ -1,13 +1,13 @@
-# A simple Flask application that exports Prometheus metrics.
+# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Bar%20Chart.webp" alt="Bar Chart" width="50" height="50" /> A simple Flask application that exports Prometheus metrics.
 **(There is also a self-hosted runner k8s manifests for this project, based on the myoung34/github-runner image)**
 
-## What the app does
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Exclamation%20Question%20Mark.webp" alt="Exclamation Question Mark" width="30" height="30" /> What the app does
 
 - When you visit `/`, it counts the number of visits.
 - When you visit `/metrics`, it exposes metrics in a format that Prometheus understands.
 
 
-## Project Structure
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Card Index Dividers.webp" alt="Card Index Dividers" width="30" height="30" /> Project Structure
 
 ```bash
 .
@@ -26,7 +26,7 @@
 ```
 
 
-## Installation Guide
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Travel and Places/Rocket.webp" alt="Rocket" width="30" height="30" /> Installation Guide
 
 ### 1. Build docker image
 
